@@ -80,7 +80,8 @@ nav {
 }
 
 .nav__link--anchor:hover {
-    font-size: 24px;
+    font-size: 14px;
+    filter: brightness(80%);
 }
 
 .nav__link--anchor-primary {
@@ -92,7 +93,8 @@ nav {
 }
 
 .nav__link--anchor-primary:hover {
-    font-size: 24px;
+    font-size: 14px;
+    filter: brightness(80%);
 }
 
 .personal__logo {
@@ -145,10 +147,17 @@ nav {
 }
 
 .about-me__link {
-    font-size: 20px;
+    font-size: 32px;
     color: black;
     text-decoration: none;
     padding: 0 16px;
+    transition: all 300ms ease;
+}
+
+.about-me__link:hover {
+    font-size: 30px;
+    filter: brightness(80%);
+    opacity: 0.5;
 }
 
 .about-me__img-container {
