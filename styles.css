@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 a {
@@ -28,7 +29,7 @@ a {
 
 p {
     color: white;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 li {
@@ -47,6 +48,7 @@ li {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 h1 {
@@ -101,6 +103,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px;
 }
 
 .nav__link--list {
@@ -359,4 +362,78 @@ nav {
 
 .footer__row {
     padding: 4%;
+}
+
+/* Small phones, tablets and large smartphones */
+@media (max-width:768px) {
+    nav {
+        padding: 12px 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .about-me__info--para {
+        font-size: 14px;
+    }
+
+    .personal__logo {
+        font-size: 16px;
+    }
+
+    .language {
+        width: calc(100%/3);
+    }
+
+    .row {
+        padding: 48px;
+    }
+
+    .project__wrapper {
+        pointer-events: none;
+        position: relative;
+        padding-bottom: 48px;
+    }
+
+    .project__links {
+        opacity: 1;
+        position: absolute;
+        top: auto;
+        left: 0;
+        right: 0;
+        transition: all 450ms ease;
+        z-index: 3;
+    }
+
+    .project__link {
+        pointer-events: auto;
+        text-decoration: none;
+        font-size: 32px;
+        margin: 0px 12px;
+    }
+
+    .project__wrapper:hover .project__img{
+        opacity: 1;
+        filter: blur(0px);
+        transform: scale(1);
+    }
+    
+    .project__wrapper:hover .project__links {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav__link {
+        display: none;
+    }
+
+    .about-me__img {
+        width: 80%;
+    }
+
+    .project__description {
+        font-size: 12px;
+    }
 }
