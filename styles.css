@@ -429,11 +429,39 @@ nav {
         display: none;
     }
 
+    .nav__link--anchor-primary {
+        box-shadow: 0.3rem 0.3rem #31EC56;
+    }
+
+    .personal__logo {
+        box-shadow: 0.3rem 0.3rem #EF036C;
+    }
+
+    .about-me__info--inner-container {
+        box-shadow: 0.3rem 0.3rem black;
+    }
+
+    .language__img {
+        padding: 6px;
+    }
+
     .about-me__img {
         width: 80%;
     }
 
     .project__description {
         font-size: 12px;
+    }
+
+    .about-me__info--container {
+        padding: 3px 8px;
+    }
+
+    .project__wrapper {
+        box-shadow: 0.3rem 0.3rem black;
+    }
+
+    .about-me__info--inner-container {
+        padding: 8px;
     }
 }
