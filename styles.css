@@ -108,6 +108,18 @@ nav {
 
 .nav__link--list {
     display: flex;
+    animation: fade-left 650ms 400ms backwards;
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .nav__link--anchor {
@@ -145,6 +157,18 @@ nav {
     border: 1px solid black;
     padding: 8px 20px;
     box-shadow: 0.7rem 0.7rem #EF036C;
+    animation: fade-right 650ms 400ms backwards;
+}
+
+@keyframes fade-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .about-me__info--container {
@@ -164,16 +188,29 @@ nav {
     overflow: hidden;
     box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
     margin-bottom: 28px;
+    animation: animate-profile-picture 800ms 200ms backwards;
 }
 
 .about-me__picture {
     width: 100%;
 }
 
+@keyframes animate-profile-picture {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .about-me__info--inner-container {
     background-color: white;
     padding: 16px 40px;
     box-shadow: 0.7rem 0.7rem black;
+    animation: fade-up 650ms 400ms backwards;
 }
 
 .about-me__info--inner-container p{
@@ -183,6 +220,17 @@ nav {
 
 .about-me__info--title {
     margin-bottom: 16px;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-me__link {
@@ -203,6 +251,34 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fade-in 1200ms 800ms backwards;
+}
+
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.wave {
+    display: inline-block;
+    animation: animate-wave 500ms infinite ease-in-out;
+}
+
+@keyframes animate-wave {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 
 .about-me__img {
