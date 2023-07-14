@@ -151,6 +151,7 @@ nav {
   padding: 8px 20px;
   transition: all 300ms ease;
   box-shadow: 0.7rem 0.7rem #31ec56;
+  border-radius: 10px;
 }
 
 .nav__link--anchor-primary:hover {
@@ -168,6 +169,7 @@ nav {
   padding: 8px 20px;
   box-shadow: 0.7rem 0.7rem #ef036c;
   animation: fade-right 650ms 400ms backwards;
+  border-radius: 10px;
 }
 
 @keyframes fade-right {
@@ -225,6 +227,7 @@ nav {
   padding: 16px 40px;
   box-shadow: 0.7rem 0.7rem black;
   animation: fade-up 650ms 400ms backwards;
+  border-radius: 10px;
 }
 
 .about-me__info--inner-container p {
@@ -383,9 +386,11 @@ nav {
   position: relative;
   padding: 30px;
   background-color: white;
-  box-shadow: 0.7rem 0.7rem black;
+  box-shadow: 0.7rem 0.7rem black, 12px 12px 24px 0px #ccdbe8 inset,
+    -12px -12px 24px 0px rgba(255, 255, 255, 0.8) inset;
   text-align: center;
   transition: all 450ms ease;
+  border-radius: 10px;
 }
 
 .project__description {
@@ -402,6 +407,14 @@ nav {
   opacity: 1;
 }
 
+.project__wrapper:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px,
+    rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px,
+    rgba(0, 0, 0, 0.05) 25px 25px, 12px 12px 24px 0px #ccdbe8 inset,
+    -12px -12px 24px 0px rgba(255, 255, 255, 0.8) inset;
+}
+
 .project__wrapper p {
   color: black;
 }
@@ -413,6 +426,7 @@ nav {
 .project__img {
   width: 100%;
   transition: all 450ms ease;
+  border-radius: 10px;
 }
 
 .project__links {
