@@ -204,7 +204,6 @@ nav {
 
 .about-me__picture {
   width: 100%;
-  transform: scale(1.1);
 }
 
 @keyframes animate-profile-picture {
