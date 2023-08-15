@@ -146,26 +146,26 @@ nav {
 }
 
 .nav__link--anchor-primary {
+  border: 3px solid white;
   background-color: black;
   color: white;
   padding: 8px 20px;
   transition: all 300ms ease;
-  box-shadow: 0.7rem 0.7rem #31ec56;
+  box-shadow: 0.4rem 0.4rem #31ec56;
   border-radius: 10px;
 }
 
 .nav__link--anchor-primary:hover {
-  transform: scale(0.9);
-  filter: brightness(80%);
+  box-shadow: none;
 }
 
 .personal__logo {
+  border: 3px solid white;
   color: white;
   background-color: black;
   font-size: 24px;
   margin: 0 12px;
   font-weight: bold;
-  border: 1px solid black;
   padding: 8px 20px;
   box-shadow: 0.7rem 0.7rem #ef036c;
   animation: fade-right 650ms 400ms backwards;
@@ -194,6 +194,7 @@ nav {
 }
 
 .about-me__picture--mask {
+  border: 3px solid black;
   width: 125px;
   height: 125px;
   border-radius: 50%;
@@ -223,6 +224,7 @@ nav {
 }
 
 .about-me__info--inner-container {
+  border: 3px solid black;
   background-color: white;
   padding: 16px 40px;
   box-shadow: 0.7rem 0.7rem black;
@@ -381,13 +383,13 @@ nav {
 }
 
 .project__wrapper {
+  border: 3px solid black;
   max-width: 550px;
   margin: 0 auto;
   position: relative;
   padding: 30px;
   background-color: white;
-  box-shadow: 0.7rem 0.7rem black, 12px 12px 24px 0px #ccdbe8 inset,
-    -12px -12px 24px 0px rgba(255, 255, 255, 0.8) inset;
+  box-shadow: 0.7rem 0.7rem black;
   text-align: center;
   transition: all 450ms ease;
   border-radius: 10px;
@@ -409,10 +411,7 @@ nav {
 
 .project__wrapper:hover {
   transform: scale(1.02);
-  box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px,
-    rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px,
-    rgba(0, 0, 0, 0.05) 25px 25px, 12px 12px 24px 0px #ccdbe8 inset,
-    -12px -12px 24px 0px rgba(255, 255, 255, 0.8) inset;
+  box-shadow: none;
 }
 
 .project__wrapper p {
